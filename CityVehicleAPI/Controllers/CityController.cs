@@ -54,7 +54,6 @@ namespace CityVehicleAPI.Controllers
             }
         }
 
-
         /// <summary>
         /// GET: /city
         /// Returns details about a randomly selected city from the database.
@@ -166,7 +165,7 @@ namespace CityVehicleAPI.Controllers
                 var cityList = _mapper.Map<List<CityDto>>(cities);
 
                 return Ok(cityList);
-                
+
             }
             catch
             {
